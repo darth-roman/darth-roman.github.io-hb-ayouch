@@ -11,6 +11,30 @@ body {
     font-family: "Indie Flower", cursive;
 }
 
+
+#socks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+.socks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #174307;
+    margin: 1rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.socks:hover{
+  color: white;
+}
+
 .dwight .bubble{
     position: absolute;
     top: 5rem;
@@ -24,7 +48,7 @@ body {
     font-size: 2rem;
 }
 
-img{
+img#dwight{
     position: absolute;
     width: 20rem;
     top: 8rem;
