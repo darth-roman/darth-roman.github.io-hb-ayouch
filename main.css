@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body {
+body, #desktop {
     margin: 0;
     height: 100vh;
     overflow: hidden;
@@ -9,6 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Indie Flower", cursive;
+}
+
+#mobile {
+  display: none;
+}
+
+small{
+  font-size: 1rem;
 }
 
 
@@ -166,5 +174,15 @@ z-index: 15;
       )
       rotate(var(--rotation));
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 700px){
+  #desktop{
+    display: none;
+  }
+
+  #mobile{
+    display: block;
   }
 }
